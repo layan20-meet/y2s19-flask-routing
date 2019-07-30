@@ -3,10 +3,13 @@
 <head>
     <title>Student</title>
 	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+	
 </head>
 <body>
     <h1>This is the page for the student with id {{ id_number }}.</h1>
     <a href="{{ url_for('home') }}"> press here</a>
-
+    {{ student.name }}
+    {{ student.year }}
+    {{ student.finished_lab }}
 </body>
 </html>
